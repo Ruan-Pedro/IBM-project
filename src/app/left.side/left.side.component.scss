@@ -1,0 +1,46 @@
+.banner-left{
+    background:rgb(0, 0, 0, .40) url('../../IBM-wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    background-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-image{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 60%;
+    font-family: 'Raleway';
+    animation-name: left-to-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    
+}
+.hero-image h1{
+    font-size: 80px;   
+    font-family: "IBM-Font";
+}
+.hero-image span{
+    font-family: 'Raleway';
+    font-size: 30px;  
+    font-weight: 600; 
+    margin: 25px 0;
+    line-height: 30px;
+}
+
+@keyframes left-to-right {
+    from {left: 0;}
+    to   {right: 50%;}
+}
+.centralized{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
