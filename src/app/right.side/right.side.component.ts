@@ -25,4 +25,5 @@ export class RightSideComponent{
     this.senha = ''
 
   }
+  
  }

@@ -4,12 +4,16 @@
         <div class="login ">
             <span>Fazer Login no Sistema</span>
             <form class="form-login" action="" method="post" (ngSubmit)="logar()">
-                <input type="email" name="email" id="email" value="" placeholder="Insira seu e-mail" [(ngModel)]="email">
-                <input type="password" name="senha" id="senha" placeholder="Insira sua senha" [(ngModel)]="senha">
-                <input type="submit" value="Fazer Login">
-                <div id="my-signin2"></div> 
+                <!-- <input type="email" name="email" id="email" value="" placeholder="Insira seu e-mail" [(ngModel)]="email">
+                <input type="password" name="senha" id="senha" placeholder="Insira sua senha" [(ngModel)]="senha"> -->
+                <div id="my-signin2"></div>
+                <button id="stackoverflow"><a id="login-stack" href="" target="">Login StackOverFlow</a></button>
+
+                <a href="#" class="sign-out" onclick="signOut();">Sign out</a>
+
             </form>
         </div>
     </div>
 </section>
+<img id="emoji" src="../../assets/emoji-envergonhado.png" alt="">
 

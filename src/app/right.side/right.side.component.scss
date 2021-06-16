@@ -25,36 +25,9 @@
 .form-login{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-}
-.form-login input{
-    margin: 10px 0;
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-}
-.form-login input[type=submit]{
-    background-color: rgb(63, 63, 231);
-    color: white;
-    transition: .3s;
-    cursor: pointer;
-    font-weight: 600;
-}
-.form-login input[type=submit]:hover{
-    background-color: rgb(99, 99, 238);
-
-}
-.login{
-    padding: 60px 30px;
-    width: 45%;
-    margin: 30px auto;
-    background-color: rgb(226, 217, 217);
-    border-radius: 20px;
-    animation-name: right-to-left;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    justify-content: center;
+    text-align: center;
+    
 }
 .centralized{
     position: relative;
@@ -62,9 +35,74 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+//BUTTON-STYLES
+#stackoverflow{
+    background-color: rgb(63, 63, 231);
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: 600;
+    width: 240px;
+    padding: 15px;
+    margin: 15px auto;
+
+}
+#stackoverflow:visited{
+    text-decoration: none;
+    color: white;
+}
+.stackoverflow:hover{
+    background-color: rgb(99, 99, 238);
+
+}
+.login{
+    padding: 45px 30px;
+    width: 300px;
+    margin: 20px auto;
+     background-color: rgb(218, 224, 255);
+    border-radius: 10px;
+    animation-name: right-to-left;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    box-shadow: 10px 10px 5px #aaaaaa;;
+    transition: .4s;
+}
+.login:hover{
+    transform: scale(105%);
+}
+#my-signin2{
+    margin:auto;
+    
+}
+.sign-out{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+//EXTRAS
 @keyframes right-to-left {
     from {opacity: 0;}
     to   {opacity: 1;}
 }
 
+#emoji{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 120px;
+}
+
+@media (max-width:750px){
+    .right-side{
+        width: 100%;
+        height: 50vh;
+        top: 35%;
+        left: 0;
+    }
+    .login{
+        width: 240px;
+    }
+}
                      
