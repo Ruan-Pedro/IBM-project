@@ -1,7 +1,7 @@
 .banner-left{
-    background:rgb(0, 0, 0, .40) url('../../IBM-wallpaper.jpg');
+    background:rgb(0, 0, 0, .20) url('../../assets/IBM-wallpaper.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: 170%;
     width: 50%;
     height: 100vh;
     text-align: center;
@@ -9,6 +9,10 @@
     position: absolute;
     top: 0;
     left: 0;
+    animation-name: zoom-bg;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+
 }
 
 .hero-image{
@@ -22,13 +26,13 @@
     animation-timing-function: ease-in-out;
     
 }
-.hero-image h1{
-    font-size: 80px;   
-    font-family: "IBM-Font";
+#img-config{
+    margin: auto;
+    width: 9vw;
 }
 .hero-image span{
     font-family: 'Raleway';
-    font-size: 30px;  
+    font-size: 2vw;  
     font-weight: 600; 
     margin: 25px 0;
     line-height: 30px;
@@ -43,4 +47,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+@keyframes zoom-bg{
+    from {background-size: 300%;}
+    to   {background-size: 170%}
+}
+@media (max-width:750px){
+    .banner-left{
+        width: 100%;
+        height: 30vh;
+        top: 0;
+        left: 0;
+    }
+    #img-config{
+        width: 10vw;
+    }
+    .hero-image span{
+        font-size: 4vw;
+    }
 }
